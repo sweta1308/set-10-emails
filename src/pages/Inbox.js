@@ -24,9 +24,9 @@ export const Inbox = () => {
                             <div className="details">
                                 <Link to={`/details/${mail.mId}`}>View Details</Link>
                                 <div className='buttons'>
-                                    <button onClick={() => mailDispatch({type: 'delete', payload: mail.mId})}><i class="fa-solid fa-trash-can"></i></button>
-                                    <button onClick={() => mailDispatch({type: 'markRead', payload: mail.mId})}>Mark as {mail.unread ? 'Unread' : 'Read'}</button>
-                                    <button  onClick={() => mailDispatch({type: 'spam', payload: mail.mId})}>Report Spam</button>
+                                    <button style={{color: 'red'}} onClick={() => mailDispatch({type: 'delete', payload: mail.mId})}><i class="fa-solid fa-trash-can"></i></button>
+                                    <button style={{color: 'orange'}} onClick={() => mailDispatch({type: 'markRead', payload: mail.mId})}>Mark as {mail.unread ? 'Unread' : 'Read'}</button>
+                                    <button style={{color: 'green'}}  onClick={() => mailDispatch({type: 'spam', payload: mail.mId})}>Report Spam</button>
                                 </div>
                             </div>
                             

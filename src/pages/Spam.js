@@ -18,7 +18,7 @@ export const Spam = () => {
                             <p>{mail?.content}</p>
                             <div className="details">
                                 <Link  to={`/details/${mail.mId}`}>View Details</Link>
-                                <button onClick={() => mailDispatch({type: 'notSpam', payload: mail.mId})}>Not Spam</button>
+                                <button style={{color: 'green'}} onClick={() => mailDispatch({type: 'notSpam', payload: mail.mId})}>Not Spam</button>
                             </div>
                             
                             

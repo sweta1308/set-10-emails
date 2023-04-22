@@ -18,7 +18,7 @@ export const Trash = () => {
                             <p>{mail?.content}</p>
                             <div className="details">
                                 <Link to={`/details/${mail.mId}`}>View Details</Link>
-                                <button onClick={() => mailDispatch({type: 'restore', payload: mail.mId})}>Restore</button>
+                                <button style={{color: 'red'}} onClick={() => mailDispatch({type: 'restore', payload: mail.mId})}>Restore</button>
                             </div>
                             
                         </li>
