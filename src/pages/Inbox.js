@@ -11,7 +11,7 @@ export const Inbox = () => {
             <div className="content">
                 <h1><i class="fa-regular fa-envelope"></i> Mail Box</h1>
                 <Filters />
-                <h3 style={{textAlign: 'left', paddingLeft: '20px'}}>Unreads: {unRead}</h3>
+                <h3 style={{textAlign: 'left', paddingLeft: '60px'}}>Unreads: {unRead}</h3>
                 <ul>
                     {filterCheckData.map(mail => (
                         <>
