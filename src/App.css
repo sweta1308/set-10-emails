@@ -104,3 +104,9 @@ button {
   background-color: rgb(241, 241, 240);
   text-align: left;
 }
+
+@media (max-width: 500px) {
+  .details {
+    display: block;
+  }
+}
