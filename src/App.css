@@ -118,7 +118,7 @@ button {
     margin-top: 18px;
     padding: 0 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   label {
@@ -131,8 +131,10 @@ button {
 
   nav {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     position: fixed;
+    min-height: 0;
     bottom: 0;
     top: 90%;
     z-index:1;
@@ -145,5 +147,6 @@ button {
     position: relative;
     left: 0;
     padding-bottom: 70px;
+    margin-left: -15px;
   }
 }
