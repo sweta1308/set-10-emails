@@ -9,7 +9,6 @@ export const Header = () => {
         padding: '10px',
         marginTop: '10px', 
         backgroundColor: isActive ? 'rgba(125, 125, 125, 0.3)' : ''
-
     })
     return (
         <nav>

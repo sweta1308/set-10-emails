@@ -59,6 +59,10 @@ label {
   justify-content: space-between;
 }
 
+.buttons button {
+  padding: 0 15px;
+}
+
 ul {
   margin-top: 50px;
 }
@@ -111,11 +115,35 @@ button {
   }
 
   .buttons {
-    margin-top: 10px;
-    padding: 0 5px;
+    margin-top: 18px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  label {
+    display: block;
   }
 
   .lists-details {
     margin: 40px 30px 40px 60px;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    top: 90%;
+    z-index:1;
+    padding-top: 10px;
+    background-color: rgb(210, 213, 218);
+  }
+
+  .content {
+    width: 100%;
+    position: relative;
+    left: 0;
+    padding-bottom: 70px;
   }
 }
